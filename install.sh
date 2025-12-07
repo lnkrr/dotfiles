@@ -17,7 +17,7 @@ _confirm() {
     esac
 }
 
-for config in foot fuzzel hypr nvim swaync user-dirs.dirs; do
+for config in foot fuzzel hypr nvim swaync user-dirs.dirs gtk-3.0 gtk-4.0; do
     path="$config_home/$config"
 
     if [ -e "$path" ]; then
@@ -28,7 +28,7 @@ for config in foot fuzzel hypr nvim swaync user-dirs.dirs; do
     cp "./$config" "$path" -r
 done
 
-for config in .zshrc; do
+for config in .zshrc .gtkrc-2.0; do
     path="$HOME/$config"
 
     if [ -e "$path" ]; then
