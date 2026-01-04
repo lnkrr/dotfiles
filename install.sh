@@ -1,5 +1,16 @@
 #!/bin/sh
 
+_check_command() {
+    if ! command -v "$1" > /dev/null; then
+        echo "$1: not found" >&2
+        exit 1
+    fi
+}
+
+for cmd in curl patch python3 tar; do
+    _check_command "$cmd"
+done
+
 config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
 data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
 
