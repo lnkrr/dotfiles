@@ -44,6 +44,8 @@ mkdir -p thirdparty
 curl -Lo thirdparty/install_gtk.py \
     "https://raw.githubusercontent.com/catppuccin/gtk/v1.0.3/install.py"
 
+patch -p1 < install_gtk.patch
+
 python3 thirdparty/install_gtk.py mocha blue
 
 curl -Lo thirdparty/font.tar.xz \

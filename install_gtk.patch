@@ -1,0 +1,10 @@
+--- a/thirdparty/install_gtk.py
++++ b/thirdparty/install_gtk.py
+@@ -88,7 +88,6 @@
+     parser.add_argument(
+         "--link",
+         help="Whether to add symlinks for libadwaita",
+-        type=bool,
+         default=False,
+         action=argparse.BooleanOptionalAction,
+     )
