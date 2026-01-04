@@ -86,3 +86,5 @@ if command -v Telegram || command -v telegram-desktop; then
             ;;
     esac
 fi
+
+hyprctl reload
