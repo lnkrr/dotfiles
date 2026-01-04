@@ -106,6 +106,7 @@ setopt CORRECT
 setopt NOCASEGLOB
 setopt NUMERICGLOBSORT
 
+export EDITOR=nvim
 export WINEPREFIX=/media/data/games/wine
 export HISTFILE=/home/lnkrr/.zhistory
 export SAVEHIST=5000
