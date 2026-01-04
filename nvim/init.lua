@@ -59,13 +59,16 @@ vim.pack.add({
         src = "https://github.com/catppuccin/nvim",
         name = "catppuccin",
     },
+    {
+        src = "https://github.com/nvim-treesitter/nvim-treesitter",
+        version = "master",
+    },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/hrsh7th/nvim-cmp" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/stevearc/oil.nvim" },
@@ -111,7 +114,7 @@ local function parse_output(proc)
     local ret = {}
     if result.code == 0 then
         for line in
-            vim.gsplit(result.stdout, "\n", { plain = true, trimempty = true })
+        vim.gsplit(result.stdout, "\n", { plain = true, trimempty = true })
         do
             line = line:gsub("/$", "")
             ret[line] = true
