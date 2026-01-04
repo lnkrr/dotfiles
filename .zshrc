@@ -75,6 +75,7 @@ _alias xbs xbps-query -Rs
 _alias xbu xbps-install -Suy
 _alias s "doas "
 _alias doas "doas "
+_alias less less -RI
 _alias g git
 _alias ga git add
 _alias gc git commit
