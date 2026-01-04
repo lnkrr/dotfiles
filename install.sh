@@ -7,7 +7,7 @@ _check_command() {
     fi
 }
 
-for cmd in curl patch python3 tar; do
+for cmd in curl patch python3 tar unzip; do
     _check_command "$cmd"
 done
 
@@ -58,6 +58,14 @@ curl -Lo thirdparty/install_gtk.py \
 patch -p1 < install_gtk.patch
 
 python3 thirdparty/install_gtk.py mocha blue
+
+curl -Lo thirdparty/cursors.zip \
+    "https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-blue-cursors.zip"
+
+icons_dir="$data_home/icons"
+mkdir -p "$icons_dir"
+
+unzip thirdparty/cursors.zip -d "$icons_dir"
 
 curl -Lo thirdparty/font.tar.xz \
     "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz"
