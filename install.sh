@@ -76,6 +76,11 @@ mkdir -p "$font_dir"
 tar -xJf thirdparty/font.tar.xz -C "$font_dir"
 fc-cache -fr
 
+bg_dir="$data_home/backgrounds"
+mkdir -p "$bg_dir"
+
+cp backgrounds/* "$bg_dir"
+
 if command -v Telegram || command -v telegram-desktop; then
     read -p "Do you want to install Telegram theme? [Y/n] " choice
 
