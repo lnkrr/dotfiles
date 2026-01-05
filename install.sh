@@ -81,6 +81,14 @@ mkdir -p "$bg_dir"
 
 cp backgrounds/* "$bg_dir"
 
+read -p "Do you want to install my scripts? [Y/n] " choice
+
+case "$choice" in
+    y|Y|"")
+        cp -r scripts "$data_home"
+        ;;
+esac
+
 if command -v Telegram || command -v telegram-desktop; then
     read -p "Do you want to install Telegram theme? [Y/n] " choice
 
