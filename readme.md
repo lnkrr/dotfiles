@@ -37,3 +37,8 @@ Run the install script:
 | <kbd>Super + Ctrl + H/L</kbd>         | Change workspace               |
 | <kbd>Super + Ctrl + Shift + H/L</kbd> | Move window + change workspace |
 | <kbd>Super + Ctrl + W</kbd>           | Select wallpaper               |
+
+## Credit
+
+- [Forest Wallpaper](backgrounds/forest.jpg) by
+  [Sebastian Unrau](https://unsplash.com/@sebastian_unrau)
