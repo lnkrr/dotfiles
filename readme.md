@@ -2,6 +2,9 @@
 
 My personal dotfiles.
 
+![Preview](assets/preview.png)
+![Neovim](assets/neovim.png)
+
 ## Installation
 
 Clone the repository:
