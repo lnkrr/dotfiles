@@ -16,7 +16,7 @@ $ git clone https://github.com/lnkrr/dotfiles && cd dotfiles
 Run the install script:
 
 ```sh
-./install.sh
+$ ./install.sh
 ```
 
 ## Keybindings
