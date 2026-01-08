@@ -38,7 +38,17 @@ Run the install script:
 | <kbd>Super + Ctrl + Shift + H/L</kbd> | Move window + change workspace |
 | <kbd>Super + Ctrl + W</kbd>           | Select wallpaper               |
 
-## Credit
+## Credits
 
-- [Forest Wallpaper](backgrounds/forest.jpg) by
+- [Forest](backgrounds/forest.jpg) by
   [Sebastian Unrau](https://unsplash.com/@sebastian_unrau)
+- [Abstract Glass](backgrounds/abstract-glass.jpg) and
+  [Abstract Light](backgrounds/abstract-light.jpg) by
+  [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
+- [Flamingo](backgrounds/flamingo.jpg) by
+  [Philippe BONTEMPS](https://unsplash.com/@philippeb)
+- [Wall Sconce](backgrounds/wall-sconce.jpg) by
+  [Ethan Hoover](https://unsplash.com/@ethanchoover)
+- [White and Black Blocks](backgrounds/white-black-blocks.jpg) and
+  [Abstract Dark](backgrounds/abstract-dark.jpg) by
+  [Milad Fakurian](https://unsplash.com/@fakurian)
