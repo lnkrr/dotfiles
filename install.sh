@@ -1,15 +1,9 @@
 #!/bin/sh
 
-_check_command() {
-    if ! command -v "$1" > /dev/null; then
-        echo "$1: not found" >&2
-        exit 1
-    fi
-}
+src=$(dirname $(realpath "$0"))
+. "$src/scripts/common.sh"
 
-for cmd in curl patch python3 tar unzip; do
-    _check_command "$cmd"
-done
+_require_cmd curl patch python3 tar unzip
 
 config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
 data_home="${XDG_DATA_HOME:-$HOME/.local/share}"
@@ -89,7 +83,7 @@ case "$choice" in
         ;;
 esac
 
-if command -v Telegram || command -v telegram-desktop; then
+if _has_cmd Telegram || _has_cmd telegram-desktop; then
     read -p "Do you want to install Telegram theme? [Y/n] " choice
 
     case "$choice" in

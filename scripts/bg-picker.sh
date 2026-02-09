@@ -1,9 +1,11 @@
 #!/bin/sh
 
-if ! command -v swww; then
-    echo "swww: not found" >&2
-    exit 1
-fi
+src=$(dirname $(realpath "$0"))
+
+. "$src/common.sh"
+. "$src/dmenu.sh"
+
+_require_cmd swww
 
 bg_dir="${XDG_DATA_HOME:-$HOME/.local/share}/backgrounds"
 
@@ -30,7 +32,7 @@ for file in "$@"; do
     fi
 done
 
-index=$(printf '%s\n' "$bg_names" | fuzzel -d --index)
+index=$(printf '%s\n' "$bg_names" | _dmenu --index)
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -47,6 +49,11 @@ for file in "$@"; do
 done
 
 _get_refresh_rate() {
+    if ! _has_cmd wlr-randr; then
+        echo 60
+        return 0
+    fi
+
     wlr-randr | grep current | awk '{print $3}'
 }
 
