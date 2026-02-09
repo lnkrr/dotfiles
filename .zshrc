@@ -6,7 +6,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 eval "$(zoxide init zsh --cmd cd)"
 
 if [[ -z "$DISPLAY" ]] && [[ "$(tty)" == /dev/tty1 ]]; then
-    start-hyprland
+    dbus-run-session niri --session
 fi
 
 if [[ $(id -u) -eq 0 ]]; then
