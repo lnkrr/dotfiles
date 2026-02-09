@@ -28,7 +28,7 @@ _confirm_replace() {
     esac
 }
 
-for config in foot fuzzel hypr nvim swaync user-dirs.dirs gtk-3.0 gtk-4.0; do
+for config in foot fuzzel niri nvim swaync user-dirs.dirs gtk-3.0 gtk-4.0; do
     path="$config_home/$config"
 
     if [ -e "$path" ]; then
@@ -99,5 +99,3 @@ if command -v Telegram || command -v telegram-desktop; then
             ;;
     esac
 fi
-
-hyprctl reload

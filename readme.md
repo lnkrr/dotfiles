@@ -21,25 +21,26 @@ $ ./install.sh
 
 ## Keybindings
 
-| Combination                           | Action                         |
-| ------------------------------------- | ------------------------------ |
-| <kbd>Super + Esc</kbd>                | Exit Hyprland                  |
-| <kbd>Super + Q</kbd>                  | Close window                   |
-| <kbd>Super + F</kbd>                  | Toggle floating                |
-| <kbd>Super + Backspace</kbd>          | Suspend (sleep)                |
-| <kbd>Super + S</kbd>                  | Screenshot                     |
-| <kbd>F11</kbd>                        | Toggle fullscreen              |
-| <kbd>Super + R</kbd>                  | App launcher (fuzzel)          |
-| <kbd>Super + Enter</kbd>              | Terminal (foot)                |
-| <kbd>Super + B</kbd>                  | Firefox                        |
-| <kbd>Super + T</kbd>                  | Telegram                       |
-| <kbd>Super + N</kbd>                  | Notifications (swaync)         |
-| <kbd>Super + Y</kbd>                  | Resource monitor (btop)        |
-| <kbd>Super + H/J/K/L</kbd>            | Move focus                     |
-| <kbd>Super + Shift + H/J/K/L</kbd>    | Move window                    |
-| <kbd>Super + Ctrl + H/L</kbd>         | Change workspace               |
-| <kbd>Super + Ctrl + Shift + H/L</kbd> | Move window + change workspace |
-| <kbd>Super + Ctrl + W</kbd>           | Select wallpaper               |
+| Combination                       | Action                         |
+| --------------------------------- | ------------------------------ |
+| <kbd>Super + Enter</kbd>          | Terminal (foot)                |
+| <kbd>Super + Backspace</kbd>      | Suspend (sleep)                |
+| <kbd>Super + R</kbd>              | App launcher (fuzzel)          |
+| <kbd>Super + B</kbd>              | Firefox                        |
+| <kbd>Super + T</kbd>              | Telegram                       |
+| <kbd>Super + N</kbd>              | Notifications (swaync)         |
+| <kbd>Super + Y</kbd>              | Resource monitor (btop)        |
+| <kbd>Super + S</kbd>              | Screenshot                     |
+| <kbd>Super + W</kbd>              | Select wallpaper               |
+| <kbd>Super + O</kbd>              | Toggle Niri overview           |
+| <kbd>Super + Q</kbd>              | Close window                   |
+| <kbd>Super + H/J/K/L</kbd>        | Move focus                     |
+| <kbd>Super + Ctrl + H/J/K/L</kbd> | Move window/column             |
+| <kbd>Super + U/I</kbd>            | Change workspace               |
+| <kbd>Super + Ctrl + U/I</kbd>     | Move column + change workspace |
+| <kbd>Super + F</kbd>              | Maximize column                |
+| <kbd>Super + Shift + F</kbd>      | Toggle floating                |
+| <kbd>F11</kbd>                    | Toggle fullscreen              |
 
 ## Credits
 

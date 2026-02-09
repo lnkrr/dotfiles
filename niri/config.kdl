@@ -1,0 +1,96 @@
+prefer-no-csd
+
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:alt_shift_toggle"
+        }
+        repeat-rate 45
+        repeat-delay 250
+    }
+
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+spawn-at-startup "pipewire"
+spawn-at-startup "pipewire-pulse"
+spawn-at-startup "wireplumber"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swaync"
+spawn-at-startup "steam -silent"
+
+output "HDMI-A-1" {
+    mode "1920x1080@165.002"
+}
+
+binds {
+    mod+return { spawn "foot"; }
+
+    mod+r { spawn "fuzzel"; }
+    mod+b { spawn "firefox"; }
+    mod+t { spawn "Telegram"; }
+    mod+n { spawn-sh "swaync-client -t -sw"; }
+    mod+y { spawn-sh "foot btop"; }
+    mod+s { spawn-sh "grim -g $(slurp -d) - | wl-copy"; }
+    mod+w { spawn-sh "~/.local/share/scripts/bg-picker.sh"; }
+
+    mod+o { toggle-overview; }
+    mod+q { close-window; }
+
+    mod+h { focus-column-left; }
+    mod+j { focus-window-down; }
+    mod+k { focus-window-up; }
+    mod+l { focus-column-right; }
+
+    mod+ctrl+h { move-column-left; }
+    mod+ctrl+j { move-window-down; }
+    mod+ctrl+k { move-window-up; }
+    mod+ctrl+l { move-column-right; }
+
+    mod+u { focus-workspace-down; }
+    mod+i { focus-workspace-up; }
+    mod+ctrl+u { move-column-to-workspace-down; }
+    mod+ctrl+i { move-column-to-workspace-up; }
+
+    mod+f { maximize-column; }
+    mod+shift+f { toggle-window-floating; }
+
+    f11 { fullscreen-window; }
+}
+
+animations {
+    slowdown 0.8
+}
+
+layout {
+    gaps 16
+
+    focus-ring {
+        off
+    }
+
+    border {
+        on
+        width 2
+
+        active-color "#89b4fa"
+        inactive-color "#11111b"
+        urgent-color "#f38ba8"
+    }
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.7
+}
+
+window-rule {
+    geometry-corner-radius 7
+    clip-to-geometry true
+    draw-border-with-background false
+}
