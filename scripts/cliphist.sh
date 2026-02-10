@@ -1,3 +1,5 @@
+#!/bin/sh
+
 src=$(dirname $(realpath "$0"))
 
 . "$src/common.sh"

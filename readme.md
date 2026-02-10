@@ -32,6 +32,7 @@ $ ./install.sh
 | <kbd>Super + Y</kbd>              | Resource monitor (btop)        |
 | <kbd>Super + S</kbd>              | Screenshot                     |
 | <kbd>Super + W</kbd>              | Select wallpaper               |
+| <kbd>Super + V</kbd>              | Clipboard manager              |
 | <kbd>Super + O</kbd>              | Toggle Niri overview           |
 | <kbd>Super + Q</kbd>              | Close window                   |
 | <kbd>Super + H/J/K/L</kbd>        | Move focus                     |
