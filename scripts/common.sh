@@ -1,3 +1,7 @@
+_echon() {
+    printf '%s' "$@"
+}
+
 _error() {
     echo "error: $@" >&2
 }

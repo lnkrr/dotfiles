@@ -17,5 +17,5 @@ _dmenu() {
         fi
     done
 
-    echo "$result" | fuzzel -d --lines $counter "$@"
+    _echon "$result" | fuzzel -d --lines $counter "$@"
 }
