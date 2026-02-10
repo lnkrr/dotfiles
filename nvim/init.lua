@@ -72,6 +72,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/stevearc/oil.nvim" },
+    { src = "https://github.com/centlang/cent.vim" },
 })
 
 vim.cmd.colorscheme("catppuccin-mocha")
