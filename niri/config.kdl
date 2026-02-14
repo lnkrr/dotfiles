@@ -66,6 +66,10 @@ binds {
     f11 { fullscreen-window; }
 }
 
+overview {
+    backdrop-color "#11111b"
+}
+
 animations {
     slowdown 0.8
 }
