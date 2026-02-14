@@ -31,13 +31,14 @@ output "HDMI-A-1" {
 
 binds {
     mod+return { spawn "foot"; }
+    mod+backspace { spawn "loginctl" "suspend"; }
 
     mod+r { spawn "fuzzel"; }
     mod+b { spawn "firefox"; }
     mod+t { spawn "Telegram"; }
     mod+n { spawn "swaync-client" "-t" "-sw"; }
     mod+y { spawn "foot" "btop"; }
-    mod+s { spawn-sh "grim -g $(slurp -d) - | wl-copy"; }
+    mod+s { spawn-sh "grim -g \"$(slurp -d)\" - | wl-copy"; }
 
     mod+w { spawn-sh "~/.local/share/scripts/bg-picker.sh"; }
     mod+v { spawn-sh "~/.local/share/scripts/cliphist.sh"; }
