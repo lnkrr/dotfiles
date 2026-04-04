@@ -47,7 +47,8 @@ $ ./install.sh
 
 - [Forest](backgrounds/forest.jpg) by
   [Sebastian Unrau](https://unsplash.com/@sebastian_unrau)
-- [Abstract Glass](backgrounds/abstract-glass.jpg) and
+- [Abstract Glass](backgrounds/abstract-glass.jpg),
+  [Stripes](backgrounds/stripes.jpg), and
   [Abstract Light](backgrounds/abstract-light.jpg) by
   [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski)
 - [Flamingo](backgrounds/flamingo.jpg) by
