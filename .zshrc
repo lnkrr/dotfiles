@@ -108,6 +108,6 @@ setopt NOCASEGLOB
 setopt NUMERICGLOBSORT
 
 export EDITOR=nvim
-export HISTFILE=/home/lnkrr/.zhistory
+export HISTFILE=~/.zhistory
 export SAVEHIST=5000
 export HISTSIZE=5000
