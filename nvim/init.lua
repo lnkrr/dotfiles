@@ -73,6 +73,7 @@ vim.pack.add({
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/stevearc/oil.nvim" },
     { src = "https://github.com/stevearc/conform.nvim" },
+    { src = "https://github.com/iamcco/markdown-preview.nvim" },
     { src = "https://github.com/centlang/cent.vim" },
 })
 
@@ -185,3 +186,5 @@ require("conform").setup({
         lsp_format = "fallback",
     },
 })
+
+vim.fn["mkdp#util#install"]()
