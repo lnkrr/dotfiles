@@ -88,9 +88,15 @@ layout {
         width 2
 
         active-color "#89b4fa"
-        inactive-color "#11111b"
+        inactive-color "#00000000"
         urgent-color "#f38ba8"
     }
+}
+
+blur {
+    passes 3
+    offset 3
+    noise 0.15
 }
 
 window-rule {
@@ -99,7 +105,16 @@ window-rule {
 }
 
 window-rule {
+    match is-active=true
+    opacity 0.99
+}
+
+window-rule {
     geometry-corner-radius 7
     clip-to-geometry true
     draw-border-with-background false
+
+    background-effect {
+        blur true
+    }
 }
