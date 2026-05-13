@@ -72,6 +72,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/stevearc/oil.nvim" },
+    { src = "https://github.com/stevearc/conform.nvim" },
     { src = "https://github.com/centlang/cent.vim" },
 })
 
@@ -101,13 +102,6 @@ vim.diagnostic.config({ update_in_insert = true })
 
 vim.lsp.enable({ "clangd", "lua_ls", "pyright" })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-    buffer = buffer,
-    callback = function()
-        vim.lsp.buf.format({ async = false })
-    end,
-})
-
 -- https://github.com/stevearc/oil.nvim/blob/master/doc/recipes.md#hide-gitignored-files-and-show-git-tracked-hidden-files
 
 local function parse_output(proc)
@@ -115,7 +109,7 @@ local function parse_output(proc)
     local ret = {}
     if result.code == 0 then
         for line in
-        vim.gsplit(result.stdout, "\n", { plain = true, trimempty = true })
+            vim.gsplit(result.stdout, "\n", { plain = true, trimempty = true })
         do
             line = line:gsub("/$", "")
             ret[line] = true
@@ -178,5 +172,16 @@ require("oil").setup({
                 return git_status[dir].ignored[name]
             end
         end,
+    },
+})
+
+require("conform").setup({
+    formatters_by_ft = {
+        lua = { "stylua" },
+        javascript = { "prettier" },
+    },
+    format_on_save = {
+        timeout_ms = 600,
+        lsp_format = "fallback",
     },
 })
