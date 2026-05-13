@@ -54,6 +54,10 @@ set("n", "<leader>N", function()
     vim.diagnostic.jump({ count = -1, float = true })
 end)
 
+set("n", "<leader>H", function()
+    require("hexedit").toggle()
+end)
+
 vim.pack.add({
     {
         src = "https://github.com/catppuccin/nvim",
@@ -75,6 +79,7 @@ vim.pack.add({
     { src = "https://github.com/stevearc/conform.nvim" },
     { src = "https://github.com/iamcco/markdown-preview.nvim" },
     { src = "https://github.com/centlang/cent.vim" },
+    { src = "https://github.com/lnkrr/hexedit.nvim" },
 })
 
 vim.cmd.colorscheme("catppuccin-mocha")
@@ -188,3 +193,5 @@ require("conform").setup({
 })
 
 vim.fn["mkdp#util#install"]()
+
+require("hexedit").setup()
