@@ -25,6 +25,7 @@ spawn-at-startup "swaync"
 spawn-at-startup "steam" "-silent"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "-max-items" "10" "store"
 spawn-at-startup "Telegram" "-startintray"
+spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
 
 output "HDMI-A-1" {
     mode "1920x1080@165.002"
