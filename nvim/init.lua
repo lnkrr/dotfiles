@@ -63,10 +63,6 @@ vim.pack.add({
         src = "https://github.com/catppuccin/nvim",
         name = "catppuccin",
     },
-    {
-        src = "https://github.com/nvim-treesitter/nvim-treesitter",
-        version = "master",
-    },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
@@ -86,11 +82,6 @@ vim.cmd.colorscheme("catppuccin-mocha")
 
 require("lualine").setup()
 require("nvim-autopairs").setup()
-
-require("nvim-treesitter.configs").setup({
-    ensure_installed = { "cpp", "lua", "python", "gitcommit" },
-    highlight = { enable = true },
-})
 
 local cmp = require("cmp")
 
